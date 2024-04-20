@@ -1,0 +1,367 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar1 {
+    background-color: rgb(67, 103, 185);
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.left i {
+    padding-left: 16px;
+    padding-right: 6px;
+    font-size: 12px;
+    display: inline;
+}
+
+.left {
+    font-size: 14px;
+    padding: 8px;
+    width: 33%;
+}
+
+.right {
+    width: 38%;
+    position: fixed;
+    left: 47%;
+    top: 5px;
+}
+
+.nav-options ul li {
+    list-style: none;
+    display: inline;
+    font-size: 14px;
+    padding: 6px;
+}
+
+.nav-options a {
+    text-decoration: none;
+    color: white;
+}
+
+.search {
+    position: fixed;
+    left: 77%;
+    top: 5px;
+}
+
+.search input {
+    width: 260px;
+    height: 85%;
+    background-color: rgb(67, 103, 185);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+::placeholder {
+    color: white;
+    padding-left: 12px;
+}
+
+.search button {
+    font-size: 14.5px;
+    position: fixed;
+    width: 80px;
+    left: 93%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgb(234, 187, 15);
+    color: white;
+    font-weight: 700;
+    border: 1px solid white;
+}
+
+.navbar2 img {
+    margin-top: 10px;
+}
+
+.img1 {
+    width: 170px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.img2 {
+    position: fixed;
+    left: 16rem;
+    width: 70px;
+    height: 50px;
+}
+
+.img3 {
+    position: fixed;
+    left: 21rem;
+    width: 122px;
+    height: 50px;
+}
+
+.navbar2 {
+    background-color: white;
+    height: 80px;
+    -webkit-box-shadow: 0 1px 14px -6px black;
+    -moz-box-shadow: 0 1px 14px -6px black;
+    box-shadow: 0 1px 14px -6px rgba(0, 0, 0, 0.601);
+    position: sticky;
+    top: 40px;
+}
+
+.navbar2 .options {
+    width: 60%;
+    height: 70px;
+    position: fixed;
+    left: 40rem;
+    top: 42px
+}
+
+.dropdown {
+    border-color: white;
+    width: 7rem;
+}
+
+.select-options {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    font-size: 16px;
+    padding: 5px 12px;
+}
+
+.covid {
+    position: fixed;
+    left: -2rem;
+}
+
+.carousel-control-prev-icon {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 15px;
+}
+
+.carousel-control-next-icon {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: 15px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.cards {
+    width: 1140px;
+    height: 270px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxes {
+    background-color: white;
+    border-top: 3px solid rgb(67, 103, 185);
+    height: 250px;
+    width: 357px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px;
+}
+
+/* .slider {
+    padding-top: 55px;
+} */
+
+.boxes:hover {
+    border-top: 3px solid rgb(218, 144, 5);
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 6px 8px, rgba(99, 99, 99, 0.2) -6px 0px 8px, rgba(99, 99, 99, 0.2) 6px 0px 8px;
+}
+
+.boxes img {
+    position: relative;
+    padding-top: 20px;
+    height: 80px;
+}
+
+.boxes .about {
+    font-size: 24px;
+    color: #4367b9;
+    font-weight: 650;
+}
+
+.boxes .pqr {
+    width: 320px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.boxes a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #4367b9;
+    position: relative;
+    top: 10px;
+}
+
+#abcd {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#aboutus {
+    margin-bottom: 80px;
+    margin-left: 190px;
+    border-radius: 10px;
+    display: flex;
+}
+
+#aboutus img {
+    width: 432px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+#play {
+    position: absolute;
+    left: 200px;
+    z-index: 10;
+    scale: 0.15;
+}
+
+#play:hover {
+    scale: 0.17;
+}
+
+#para {
+    border-radius: 10px;
+    padding-left: 40px;
+}
+
+#a {
+    color: orange;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+#b {
+    color: #4367b9;
+    font-size: 26px;
+    font-weight: 700;
+    display: block;
+    padding-bottom: 8px;
+}
+
+#c {
+    display: block;
+    width: 660px;
+}
+
+#aboutus a {
+    text-decoration: none;
+}
+
+#aboutus p {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #4367b9;
+    font-weight: 700;
+}
+
+#x {
+    color: orange;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    position: absolute;
+    left: 43%;
+    padding-bottom: 30px;
+}
+
+#y {
+    color: #4367b9;
+    font-size: 34px;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 39.7%;
+}
+
+.container {
+    padding-top: 80px;
+    height: 550;
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.dibba {
+    height: 200px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 16px;
+    margin-bottom: 40px;
+}
+
+.dibba:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 12px, rgba(99, 99, 99, 0.2) -4px 0px 12px, rgba(99, 99, 99, 0.2) 4px 0px 12px;
+}
+
+.dibba img {
+    width: 100px;
+    position: relative;
+    left: 80px;
+    top: 20px;
+}
+
+.dib {
+    text-align: center;
+    position: relative;
+    top: 30px;
+    width: 200px;
+    left: 40px;
+    font-size: 17px;
+    color: #4367b9;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.sticky {
+    position: fixed;
+    /* display: inline; */
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    top: 360px;
+    left: 1480px;
+    height: 150px;
+    width: 40px;
+    background-color: orangered;
+    z-index: 200;
+    border: 1px solid white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-right: 5px;
+}
