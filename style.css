@@ -89,6 +89,7 @@ body {
 .img2 {
     position: fixed;
     left: 16rem;
+    top: 2rem;
     width: 70px;
     height: 50px;
 }
@@ -364,4 +365,18 @@ header {
     padding-bottom: 5px;
     padding-top: 20px;
     padding-right: 5px;
+}
+
+.endl {
+    background-color: rgb(48, 111, 228);
+    height: 25px;
+    position: relative;
+    top: 60px;
+    color: white;
+    box-shadow: -1px -1px 4px rgb(62, 62, 62);
+}
+
+#send {
+    position: relative;
+    left: 830px;
 }
