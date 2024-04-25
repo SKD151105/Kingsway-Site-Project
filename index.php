@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,9 +44,12 @@
             </div>
         </div>
         <div class="navbar2">
-            <a href="#"><img class="img1" src="Screenshot 2024-04-16 104210.png" alt="logo1"></a>
-            <a href="#"><img class="img2" src="Screenshot 2024-04-16 104927.png" alt="logo2"></a>
-            <a href="#"><img class="img3" src="Screenshot 2024-04-16 105130.png" alt="logo3"></a>
+        <a href="#"><img class="img1"
+                    src="Screenshot 2024-04-16 104210.png" alt="logo1"></a>
+            <a href="#"><img class="img2"
+                    src="Screenshot 2024-04-16 104927.png" alt="logo2"></a>
+            <a href="#"><img class="img3"
+                    src="Screenshot 2024-04-16 105130.png" alt="logo3"></a>
             <!-- Accessing sites by clicking on the image -->
             <div class="options">
                 <form action="backend.php">
@@ -74,13 +80,26 @@
                         <option value="efg">Covid Warriers</option>
                     </select>
 
-                    <a class="select-options" href="#" style="position: absolute; left: 13.5rem">Quick Pay</a>
+                    <a class="select-options" href="<?php
+    if(empty($_SESSION['username'])) {
+        echo 'login.php';
+    } else {
+        echo 'logout.php';
+    }
+?>" style="position: absolute; left: 13.5rem"><?php
+    if(empty($_SESSION['username'])) {
+        echo 'Log in / Sign up';
+    } else {
+        echo 'Log out';
+    }
+?></a>
+
                 </form>
             </div>
         </div>
     </header>
 
-    <a href="./form.html"><span class="sticky">Quick Enquiry</span></a>
+    <a href="./enquiry.php"><span class="sticky">Quick Enquiry</span></a>
 
     <!-- Make use of anchor tags before images to open a site on clicking the image -->
     <div class="slider">
@@ -117,19 +136,26 @@
 
     <div class="cards">
         <div class="card2 boxes">
-            <img src="../Kingsway/imgs/Screenshot 2024-02-16 093059.png" alt="#">
+            <img src="./imgs/Screenshot 2024-02-16 093059.png" alt="#">
             <div class="about">Emergency</div>
             <div class="pqr">The Kingsway Emergency department is manned with Certified & Trained doctors…</div>
             <a href="#">Read More</a>
         </div>
         <div class="card3 boxes">
-            <img src="../Kingsway/imgs/Screenshot 2024-02-16 093150.png" alt="#">
+            <img src="./imgs/Screenshot 2024-02-16 093150.png" alt="#">
             <div class="about">Book Appointment</div>
             <div class="pqr">Online Hassle Free Appointment Booking.</div>
-            <a href="#">Read More</a>
+            <a href="<?php
+    if(isset($_SESSION['username'])) {
+        echo 'Book_an_appointment.php';
+    } else {
+        echo 'login.php';
+    }
+?>">Read More</a>
+
         </div>
         <div class="card1 boxes">
-            <img src="../Kingsway/imgs/Screenshot 2024-02-16 093201.png" alt="#">
+            <img src="./imgs/Screenshot 2024-02-16 093201.png" alt="#">
             <div class="about">Call Us</div>
             <div class="pqr">Please Call for Inquiry and Appointment</div>
             <a href="#">0712 6789100</a>
@@ -142,7 +168,7 @@
                 alt="#">
             <a id="play"
                 href="https://thelivenagpur.com/wp-content/uploads/2021/05/a18b9dce-2f08-4ae7-aeae-c4f1fbc00458.jpg">
-                <img style="border-radius: 45%;" src="../Kingsway/imgs/Screenshot 2024-02-19 153551.png" alt="#"></a>
+                <img style="border-radius: 45%;" src="./imgs/Screenshot 2024-02-19 153551.png" alt="#"></a>
         </div>
         <div id="para">
             <span id="a">ABOUT US-</span>
@@ -163,60 +189,67 @@
         </div>
     </div>
 
-    <img id="abcd" src="../Kingsway/imgs/Screenshot 2024-02-16 100206.png" alt="#">
+    <img id="abcd" src="./imgs/Screenshot 2024-02-16 100206.png" alt="#">
 
-    <span id="x">-OUR SPECIALITIES-</span>
-    <span id="y">Medical Services</span>
+<span id="x">-OUR SPECIALITIES-</span>
+<span id="y">Medical Services</span>
 
-    <div class="container">
-        <div class="dibba rect1">
-            <a href="#"><img src="../Kingsway/imgs/Screenshot 2024-02-20 002051.png" alt="">
-                <p class="dib">Institute of Cardiac Sciences</p>
-            </a>
-        </div>
-        <div class="dibba rect2">
-            <a href="#"><img src="../Kingsway/imgs/Screenshot 2024-02-20 002104.png" alt="">
-                <p class="dib">Institute of Gastroenterology</p>
-            </a>
-
-        </div>
-        <div class="dibba rect3">
-            <a href="#"><img src="../Kingsway/imgs/Screenshot 2024-02-20 002109.png" alt="">
-                <p class="dib">Institute of Nephro-Urology</p>
-            </a>
-        </div>
-        <div class="dibba rect4">
-            <a href="#"><img src="../Kingsway/imgs/Screenshot 2024-02-20 002114.png" alt="">
-                <p class="dib">Institute of Nephro-Urology</p>
-            </a>
-        </div>
-        <div class="dibba rect5">
-            <a href="#"><img src="../Kingsway/imgs/Screenshot 2024-02-20 002120.png" alt="">
-                <p class="dib">Department of Critical care and Emergency Medicine</p>
-            </a>
-        </div>
-        <div class="dibba rect6">
-            <a href="#"><img src="../Kingsway/imgs/Screenshot 2024-02-20 002128.png" alt="">
-                <p class="dib">Department of General Surgery</p>
-            </a>
-        </div>
-        <div class="dibba rect7">
-            <a href="#"><img src="../Kingsway/imgs/Screenshot 2024-02-20 002132.png" alt="">
-                <p class="dib">Department of Internal Surgery</p>
-            </a>
-        </div>
-        <div class="dibba rect8">
-            <a href="#"><img src="../Kingsway/imgs/Screenshot 2024-02-20 002146.png" alt="">
-                <p class="dib">Institute of Orthopaedics & Sports Medicine</p>
-            </a>
-        </div>
+<div class="container">
+    <div class="dibba rect1">
+        <a href="#"><img
+                src="./imgs/Screenshot 2024-02-20 002051.png" alt="">
+            <p class="dib">Institute of Cardiac Sciences</p>
+        </a>
     </div>
-    
-    <div class="endl">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#169; Copyright 2024. Kingsway Hospitals Group. All Rights Reserved.
-        <span id="send">Privacy Policy | Disclaimer | Contact</span>
+    <div class="dibba rect2">
+        <a href="#"><img
+                src="./imgs/Screenshot 2024-02-20 002104.png" alt="">
+            <p class="dib">Institute of Gastroenterology</p>
+        </a>
+
     </div>
+    <div class="dibba rect3">
+        <a href="#"><img
+                src="./imgs/Screenshot 2024-02-20 002109.png" alt="">
+            <p class="dib">Institute of Nephro-Urology</p>
+        </a>
+    </div>
+    <div class="dibba rect4">
+        <a href="#"><img
+                src="./imgs/Screenshot 2024-02-20 002114.png" alt="">
+            <p class="dib">Institute of Nephro-Urology</p>
+        </a>
+    </div>
+    <div class="dibba rect5">
+        <a href="#"><img
+                src="./imgs/Screenshot 2024-02-20 002120.png" alt="">
+            <p class="dib">Department of Critical care and Emergency Medicine</p>
+        </a>
+    </div>
+    <div class="dibba rect6">
+        <a href="#"><img
+                src="./imgs/Screenshot 2024-02-20 002128.png" alt="">
+            <p class="dib">Department of General Surgery</p>
+        </a>
+    </div>
+    <div class="dibba rect7">
+        <a href="#"><img
+                src="./imgs/Screenshot 2024-02-20 002132.png" alt="">
+            <p class="dib">Department of Internal Surgery</p>
+        </a>
+    </div>
+    <div class="dibba rect8">
+        <a href="#"><img
+                src="./imgs/Screenshot 2024-02-20 002146.png" alt="">
+            <p class="dib">Institute of Orthopaedics & Sports Medicine</p>
+        </a>
+    </div>
+</div>
+
+<div class="endl">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#169; Copyright 2024. Kingsway Hospitals Group. All Rights Reserved.
+    <span id="send">Privacy Policy | Disclaimer | Contact</span>
+</div>
     
 </body>
-
 </html>
